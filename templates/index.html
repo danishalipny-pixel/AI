@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Danish AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header>
+            <h1>🤖 Danish AI</h1>
+            <p>Your Personal AI Assistant</p>
+        </header>
+
+        <main id="chatBox" class="chat-box">
+
+            <div class="message ai">
+                <div class="bubble">
+                    Hello! 👋 I'm Danish AI. How can I help you?
+                </div>
+            </div>
+
+        </main>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Ask me anything..."
+                autocomplete="off"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
